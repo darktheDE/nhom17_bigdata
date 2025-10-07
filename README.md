@@ -115,7 +115,7 @@ Link video demo: [Xem tại đây](reports/video/link_demo.txt)
 
 ## 📄 License
 
-Dự án này được phát triển cho môn học Big Data Analytics - HCMUTE.
+Dự án này được phát triển cho môn học Nhập môn Dữ Liệu Lớn - HCMUTE.
 
 ---
 **Lưu ý:** File dữ liệu lớn không được commit lên GitHub. Chỉ file mẫu `laptops_sample.csv` được đưa vào repository.
