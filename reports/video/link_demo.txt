@@ -1,0 +1,16 @@
+Link Video Demo Dự Án
+=======================
+
+YouTube: [Đang cập nhật]
+Google Drive: [Đang cập nhật]
+
+Nội dung video:
+1. Giới thiệu đề tài và mục tiêu
+2. Demo thu thập dữ liệu (Web Scraping)
+3. Demo upload dữ liệu lên HDFS
+4. Demo chạy MapReduce jobs
+5. Demo truy vấn với Hive
+6. Demo dashboard Power BI
+7. Kết luận và hướng phát triển
+
+Thời lượng: ~10-15 phút
