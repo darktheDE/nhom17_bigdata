@@ -15,14 +15,19 @@ Dự án nhằm mục đích khai thác dữ liệu công khai từ các trang w
 *   **Nguồn:** Dữ liệu được thu thập bằng phương pháp cào (web scraping) từ hai trang web lớn: `thegioididong.com` và `cellphones.com.vn`.
 *   **Định dạng:** Dữ liệu thô được lưu dưới dạng file `.csv`.
 *   **Số lượng:** Hơn 1000 bản ghi (records).
-*   **Các thuộc tính chính:** `id`, `product_name`, `current_price`, `list_price`, `brand`, `category`, `cpu`, `ram`, `storage`, `screen_size`, `screen_resolution`, `os`, `software`, `average_rating`, `product_url`.
+*   **Các thuộc tính chính:** `id`, `product_name`, `current_price`, `list_price`, `brand`, `category`, `cpu`, `ram`, `storage`, `screen_size`, `screen_resolution`, `os`, `software`, `average_rating`, `product_url`, `source_website`.
+*   **Phân tích so sánh:** Việc có dữ liệu từ 2 sàn thương mại lớn mở ra hướng phân tích cạnh tranh (Competitive Analysis), bao gồm:
+    *   So sánh chiến lược giá giữa các sàn
+    *   Phân tích chương trình khuyến mãi và tỷ lệ giảm giá
+    *   So sánh danh mục sản phẩm và độ đa dạng
+    *   Phát hiện sản phẩm độc quyền trên từng sàn
 
 **4. Đội ngũ & Phân công vai trò (Team & Roles):**
 Dự án được thực hiện bởi một nhóm gồm các vai trò chuyên biệt:
 *   **Team Hạ tầng & Dữ liệu (Phan Trọng Phú, Phan Trọng Quí):** Chịu trách nhiệm thiết lập môi trường máy chủ (CentOS), cào dữ liệu và thực hiện làm sạch dữ liệu ban đầu.
-*   **Big Data Developer (Bạn):** Chịu trách nhiệm chính trong việc xử lý dữ liệu lớn. Viết và thực thi 10 jobs MapReduce bằng Python để xử lý, biến đổi và tổng hợp dữ liệu thô từ HDFS.
-*   **Data Analyst (Phạm Văn Thịnh):** Sử dụng Apache Hive và ngôn ngữ HiveQL để truy vấn dữ liệu (cả dữ liệu thô và dữ liệu đã qua MapReduce). Nhiệm vụ là khám phá dữ liệu, tìm kiếm insight và chuẩn bị các bộ dữ liệu tổng hợp cuối cùng.
-*   **BI Developer (Nguyễn Văn Quang Duy):** Sử dụng Power BI để kết nối với dữ liệu tổng hợp từ Data Analyst và xây dựng một dashboard trực quan, tương tác. Đồng thời, thiết lập Grafana để giám sát hiệu năng hệ thống.
+*   **Big Data Developer (Bạn):** Chịu trách nhiệm chính trong việc xử lý dữ liệu lớn. Viết và thực thi các jobs MapReduce bằng Python để xử lý, biến đổi và tổng hợp dữ liệu thô từ HDFS. Bao gồm 10 jobs phân tích cơ bản và 3 jobs phân tích so sánh giữa 2 sàn thương mại.
+*   **Data Analyst (Phạm Văn Thịnh):** Sử dụng Apache Hive và ngôn ngữ HiveQL để truy vấn dữ liệu (cả dữ liệu thô và dữ liệu đã qua MapReduce). Nhiệm vụ là khám phá dữ liệu, tìm kiếm insight và chuẩn bị các bộ dữ liệu tổng hợp cuối cùng. Đặc biệt tập trung vào phân tích so sánh chiến lược giá và khuyến mãi giữa các sàn.
+*   **BI Developer (Nguyễn Văn Quang Duy):** Sử dụng Power BI để kết nối với dữ liệu tổng hợp từ Data Analyst và xây dựng một dashboard trực quan, tương tác. Đồng thời, thiết lập Grafana để giám sát hiệu năng hệ thống. Dashboard bao gồm các biểu đồ so sánh giá và khuyến mãi giữa 2 sàn thương mại.
 
 **5. Công nghệ sử dụng (Technology Stack):**
 *   **Lưu trữ phân tán:** HDFS (Hadoop Distributed File System).

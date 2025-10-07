@@ -46,12 +46,6 @@
 - **Output:** cpu_family \t count \t avg_price
 - **Ví dụ:** Intel i5 \t 280, AMD R5 \t 150, Apple M \t 45
 
-### ⏳ Job 08: Screen Resolution Analysis
-- **Mục đích:** Phân tích độ phân giải màn hình phổ biến
-- **Input:** raw/laptops.csv
-- **Output:** resolution \t count \t avg_price
-- **Ví dụ:** Full HD \t 650, WUXGA \t 180, 4K \t 45
-
 ### ⏳ Job 09: OS Distribution
 - **Mục đích:** Phân bố hệ điều hành (Windows 11 vs macOS)
 - **Input:** raw/laptops.csv
@@ -63,6 +57,12 @@
 - **Input:** raw/laptops.csv
 - **Output:** price_range \t avg_rating \t product_count
 - **Ví dụ:** 25-35tr \t 4.92 \t 120
+
+### ⏳ Job 08: Discount Comparison by Platform
+- **Mục đích:** So sánh tỷ lệ giảm giá giữa các sàn thương mại điện tử
+- **Input:** raw/laptops.csv
+- **Output:** source_website \t avg_discount_percent \t max_discount
+- **Ví dụ:** thegioididong.com \t 12.5% \t 25%, cellphones.com.vn \t 10.8% \t 22%
 
 ---
 

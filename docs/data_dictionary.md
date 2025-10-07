@@ -147,6 +147,19 @@
   - "https://www.thegioididong.com/laptop/hp-15-fc0085au-r5-a6vv8pa"
   - "https://cellphones.com.vn/laptop-dell-inspiron-15.html"
 
+#### `source_website` (String)
+- **Mô tả:** Sàn thương mại điện tử nguồn của sản phẩm (được trích xuất từ product_url)
+- **Kiểu:** VARCHAR(50)
+- **Ràng buộc:** NOT NULL
+- **Giá trị:** 
+  - "thegioididong.com" (Thế Giới Di Động)
+  - "cellphones.vn" (CellphoneS)
+- **Ví dụ:** "thegioididong.com", "cellphones.vn"
+- **Lưu ý:** 
+  - Field này cho phép phân tích so sánh chiến lược giá, chương trình khuyến mãi và danh mục sản phẩm giữa các sàn thương mại điện tử
+  - Được tạo tự động từ cột `product_url` bằng script `src/add_source_website.py`
+  - Hiện tại dữ liệu chỉ có từ thegioididong.com (414 sản phẩm)
+
 ---
 
 ## 📊 Phân Loại Dữ Liệu
@@ -156,7 +169,7 @@
 
 ### Dữ Liệu Văn Bản (Text)
 - `product_name`, `brand`, `category`, `cpu`, `ram`, `storage`
-- `screen_size`, `screen_resolution`, `os`, `software`, `product_url`
+- `screen_size`, `screen_resolution`, `os`, `software`, `product_url`, `source_website`
 
 ---
 

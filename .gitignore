@@ -33,3 +33,5 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.bak
+docs/
+output/

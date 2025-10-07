@@ -7,26 +7,23 @@ Output: brand \t 1
 """
 
 import sys
+import csv
 
 def mapper():
-    # Đọc từng dòng từ stdin
-    for line in sys.stdin:
-        line = line.strip()
-        
-        # Bỏ qua dòng header
-        if line.startswith('id,'):
-            continue
-        
+    # Sử dụng csv.reader để parse đúng CSV có dấu phẩy trong trường
+    reader = csv.reader(sys.stdin)
+    
+    # Đọc và bỏ qua header
+    next(reader, None)
+    
+    for fields in reader:
         try:
-            # Parse CSV line
             # Format: id,product_name,current_price,list_price,brand,...
-            fields = line.split(',')
-            
             if len(fields) < 5:
                 continue
             
             # Brand là cột thứ 5 (index 4)
-            brand = fields[4].strip().strip('"')
+            brand = fields[4].strip()
             
             if brand and brand != '' and brand != 'N/A':
                 # Emit: brand \t 1
