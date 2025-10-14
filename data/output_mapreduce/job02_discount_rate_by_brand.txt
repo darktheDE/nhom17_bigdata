@@ -1,0 +1,16 @@
+ASUS	13.71%
+Acer	10.62%
+Apple	11.74%
+Asus	10.98%
+Dell	8.93%
+Gaming	17.17%
+Gigabyte	8.63%
+HP	14.85%
+LG	34.89%
+Lenovo	7.18%
+MSI	10.87%
+MacBook	10.61%
+Masstel	44.68%
+Samsung	22.84%
+gaming	21.06%
+iMac	5.21%

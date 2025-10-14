@@ -33,5 +33,7 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.bak
-docs/
+docs/*.md
 output/
+data/raw/
+.github/
