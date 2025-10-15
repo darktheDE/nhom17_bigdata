@@ -37,3 +37,4 @@ docs/*.md
 output/
 data/raw/
 .github/
+spark_hdfs/

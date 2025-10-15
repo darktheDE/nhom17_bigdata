@@ -1,4 +1,4 @@
-# MapReduce Job 11: Thống kê các dòng CPU phổ biến nhất
+# MapReduce Job 07: Thống kê các dòng CPU phổ biến nhất
 
 ## Mục tiêu
 Phân tích xem những dòng CPU nào (ví dụ: i5-13420H, R5-7520U, i7-13620H, M4) đang được các nhà bán lẻ ưu tiên sử dụng nhiều nhất. Insight này cực kỳ giá trị để nhận định xu hướng cấu hình của thị trường laptop.

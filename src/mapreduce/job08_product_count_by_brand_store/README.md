@@ -1,4 +1,4 @@
-# MapReduce Job 14: Đếm sản phẩm theo thương hiệu & cửa hàng
+# MapReduce Job 08: Đếm sản phẩm theo thương hiệu & cửa hàng
 
 ## Mục tiêu
 Một trong những phân tích cạnh tranh cơ bản và quan trọng nhất là so sánh **danh mục sản phẩm (inventory)**. Job này đếm xem mỗi cửa hàng đang kinh doanh bao nhiêu mẫu laptop của từng thương hiệu.
